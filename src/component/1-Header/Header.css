@@ -1,0 +1,125 @@
+/* =================== 
+ table of contents
+=======================
+1- Header design
+2- button & icon
+3- Model
+4- responsive (media Query)
+ */
+
+
+
+
+
+
+/* =================== 
+ 1-Header design
+=======================
+ */
+
+
+header .fixed {
+  position: fixed;
+  background-color: rgba(40, 40, 48, 0.91);
+  inset: 0;
+  z-index: 11;
+ /* filter: blur(8px); */
+ backdrop-filter: blur(4px);
+}
+
+@keyframes mymove {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+/* =================== 
+ 2- model
+=======================
+ */
+
+header ul.model {
+  animation: mymove 0.7s 1;
+  width: 75%;
+  background-color: var(--secondary);
+  margin-top: 2rem;
+}
+header ul.model li {
+  border-bottom: 1px solid var(--border);
+  padding-top: 0.5rem;
+  margin-top: 0.2rem;
+  padding-bottom: 0.77rem;
+ 
+}
+header ul.model li:last-child {
+  border: none;
+}
+
+header ul.model li:first-child {
+  border: none;
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+  margin-bottom: -1.4rem;
+}
+
+/* =================== 
+ 3- icon button
+=======================
+ */
+header .fa-moon,
+header .fa-bars {
+  background-color: var(--bgHeader);
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(158, 168, 67, 0.249);
+  border-radius: 50%;
+  color: var(--suptitle);
+  transition: all 0.2s;
+}
+header .fa-moon:hover,
+header .fa-bars:hover {
+  color: var(--title);
+  border: 1px solid rgba(244, 165, 96, 0.5);
+}
+header .fa-xmark {
+  font-size: 1.5rem;
+  color: var(--suptitle);
+  transition: all 0.5s;
+}
+header .fa-xmark:hover {
+  font-size: 1.7rem;
+  color: crimson;
+  rotate: 180deg;
+}
+
+.menu {
+  display: none;
+}
+
+button:active {
+  scale: 0.9;
+}
+
+/* =================== 
+4- Responsive Design
+=======================
+ */
+
+@media (max-width: 1024px) {
+  .bgHeader {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}

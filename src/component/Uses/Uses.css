@@ -1,0 +1,7 @@
+h1{
+    color: var(--title);
+}
+
+.tools{
+    color: var(--icon-hover);
+}
