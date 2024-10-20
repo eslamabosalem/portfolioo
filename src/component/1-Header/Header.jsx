@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 function Header() {
   const [showModel, setShowModel] = useState(false);
-  const [theme, setTheme] = useState(localStorage.getItem("currentmode") || "light");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("currentmode") || "light"
+  );
 
   useEffect(() => {
-    const handleScroll = () => {
-   
-    };
+    const handleScroll = () => {};
 
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -19,7 +19,7 @@ function Header() {
   }, []);
 
   useEffect(() => {
-    document.body.className = theme; 
+    document.body.className = theme;
   }, [theme]);
 
   return (
@@ -43,15 +43,21 @@ function Header() {
       <nav className="bgHeader p-4 rounded-3xl shadow-black">
         <ul className="flex gap-8">
           <li>
-            <Link to="/about" className="title">About</Link>
+            <Link to="/about" className="title">
+              About
+            </Link>
           </li>
 
           <li>
-            <Link to="/project" className="title">Projects</Link>
+            <Link to="/project" className="title">
+              Projects
+            </Link>
           </li>
 
           <li>
-            <Link to="/uses" className="title">Uses</Link>
+            <Link to="/uses" className="title">
+              Uses
+            </Link>
           </li>
         </ul>
       </nav>
@@ -75,15 +81,21 @@ function Header() {
               </button>
             </li>
             <li>
-              <Link to="/about" className="title">About</Link>
+              <Link to="/about" className="title">
+                About
+              </Link>
             </li>
 
             <li>
-              <Link to="/project" className="title">Projects</Link>
+              <Link to="/project" className="title">
+                Projects
+              </Link>
             </li>
 
             <li>
-              <Link to="/uses" className="title">Uses</Link>
+              <Link to="/uses" className="title">
+                Uses
+              </Link>
             </li>
           </ul>
         </div>

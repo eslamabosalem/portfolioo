@@ -46,10 +46,13 @@ const Contact = () => {
             />
           </div>
 
-          <button type="submit" disabled={state.submitting} className="submit">
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className="submit justify-center flex items-center"
+          >
             {state.submitting ? "Submitting ..." : "Submit"}
           </button>
-
           {state.succeeded && (
             <p
               className="flex"

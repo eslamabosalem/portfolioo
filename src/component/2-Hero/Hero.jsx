@@ -28,19 +28,17 @@ const Hero = () => {
           transition={{ duration: 2 }}
           className="title"
         >
-         Front-End Developer
+          Front-End Developer
         </motion.h1>
 
         <p className="sub-title">
-        I am Islam, a front-end developer based in Egypt. I focus on
-                designing and developing innovative and user-friendly
-                experiences, using the latest technologies such as HTML, CSS,
-                and JavaScript, along with the React framework. I always strive
-                to enhance user experience and make the web more interactive and
-                engaging.
+          I am Islam, a front-end developer based in Egypt. I focus on designing
+          and developing innovative and user-friendly experiences, using the
+          latest technologies such as HTML, CSS, and JavaScript, along with the
+          React framework. I always strive to enhance user experience and make
+          the web more interactive and engaging.
         </p>
-   
-           
+
         <div className="all-icons flex">
           <div className="icon icon-twitter"></div>
           <div className="icon icon-instagram"></div>

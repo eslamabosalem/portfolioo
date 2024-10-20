@@ -5,116 +5,107 @@
 2- Right Section ==> Card
  */
 
-
-
-main.flex{
-    gap: 3rem;
-    align-items: start;
+main.flex {
+  gap: 3rem;
+  align-items: start;
 }
 /* =================== 
 1- Left Section ==> button
 =======================
  */
 
-
-
-
-     main section.left-section.flex button{
-        width: 11rem;
-        padding: 0.75rem 0;
-        text-align: center;
-        font-size: 1.05rem;
-        text-transform: capitalize;
-        background-color: rgba(36, 37, 46,1);
-        opacity: 0.5;
-        border-radius: 5px;
-        transition: all 0.5s;
-    
-     }
-     main section.left-section.flex button:hover{
-        
-    opacity: 1;
-     }
-     main section.left-section.flex button.active{
-        opacity: 1;
-        font-weight: bold;
-        letter-spacing: 0.6px;
-        padding: 0.8rem 0;
-        border: 1px solid var(--blue);
-     }
-
-
-
+main section.left-section.flex button {
+  width: 11rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  background-color: rgba(36, 37, 46, 0.7);
+  color: var(--title);
+  opacity: 0.5;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+main section.left-section.flex button:hover {
+  opacity: 1;
+}
+main section.left-section.flex button.active {
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  padding: 0.8rem 0;
+  border: 1px solid var(--blue);
+}
 
 /* =================== 
 2- Right Section ==> Card
 =======================
  */
- .card{
-    border: 1px solid rgba(93, 188, 252, 0.3) ;
-    transition: all 0.5s;
-    border-radius: 5px;
-    background-image: linear-gradient(rgba(255,255,255,0.05) , rgba(255, 255, 255, 0.05));
- }
-
- .card:hover{
-    border: 1px solid var(--blue) ;
-    rotate: 1deg;
-    scale: 1.01;
-    cursor: pointer;
- }
- .card img{
-   
-    border-radius: 5px;
- }
-.card .box{
-    padding: 1rem 0.4rem;
-   
-}
-.card .box .title{
-   color: var(--title);
-}
-.card .box .sub-title{
-    color: var(--suptitle);
-    font-size: 0.8rem;
-    margin-top: 1rem;
-    margin-bottom: 1.1rem;
-}
-.card .box .iconss{
-    justify-content: space-between;
-}
-.card .icon-link, .card .icon-githup{
- font-size: 1.2rem;
- color:var(--suptitle) ;
-}
-.card .icon-link:hover, .card .icon-githup:hover{
- font-size: 1.2rem;
- color:var(--iconHover) ;
- cursor: pointer;
-}
-.card a.link{
-    font-size: 0.9rem;
-    color: var(--blue);
-    margin-right: 12px;
-    
+.card {
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  transition: all 0.5s;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
 }
 
+.card:hover {
+  border: 1px solid var(--blue);
+  rotate: 1deg;
+  scale: 1.01;
+  cursor: pointer;
+}
+.card img {
+  border-radius: 5px;
+}
+.card .box {
+  padding: 1rem 0.4rem;
+}
+.card .box .title {
+  color: var(--title);
+}
+.card .box .sub-title {
+  color: var(--suptitle);
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1.1rem;
+}
+.card .box .iconss {
+  justify-content: space-between;
+}
+.card .icon-link,
+.card .icon-githup {
+  font-size: 1.2rem;
+  color: var(--suptitle);
+}
+.card .icon-link:hover,
+.card .icon-githup:hover {
+  font-size: 1.2rem;
+  color: var(--iconHover);
+  cursor: pointer;
+}
+.card a.link {
+  font-size: 0.9rem;
+  color: var(--blue);
+  margin-right: 12px;
+}
 
 @media (max-width: 500px) {
-    
-    main.flex {
-      flex-direction: column;
-      gap: 2.64rem;
-      align-items: center;
-    }
+  main.flex {
+    flex-direction: column;
+    gap: 2.64rem;
+    align-items: center;
+  }
 
-main section.left-section{
+  main section.left-section {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-}
-main section.left-section.flex button{
+  }
+  main section.left-section.flex button {
     width: 7rem;
     padding: 0.8rem 0;
     font-size: 0.9rem;
@@ -122,8 +113,5 @@ main section.left-section.flex button{
     opacity: 0.5;
     border-radius: 5px;
     transition: all 0.3s;
-
- }
-    
   }
-  
+}

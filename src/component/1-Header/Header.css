@@ -7,24 +7,18 @@
 4- responsive (media Query)
  */
 
-
-
-
-
-
 /* =================== 
  1-Header design
 =======================
  */
-
 
 header .fixed {
   position: fixed;
   background-color: rgba(40, 40, 48, 0.91);
   inset: 0;
   z-index: 11;
- /* filter: blur(8px); */
- backdrop-filter: blur(4px);
+  /* filter: blur(8px); */
+  backdrop-filter: blur(4px);
 }
 
 @keyframes mymove {
@@ -55,7 +49,6 @@ header ul.model li {
   padding-top: 0.5rem;
   margin-top: 0.2rem;
   padding-bottom: 0.77rem;
- 
 }
 header ul.model li:last-child {
   border: none;
